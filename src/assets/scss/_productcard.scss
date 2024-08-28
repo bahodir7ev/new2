@@ -1,0 +1,115 @@
+.productcard {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+
+    &__image {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-title {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 18px;
+            color: $black-color;
+        }
+
+        &-count {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 125%;
+            color: $main-color;
+            margin-top: 10px;
+        }
+
+        &-weight {
+            margin-top: 5px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 125%;
+            color: $title-color;
+        }
+    }
+
+    &__shop {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+
+        &-prices {
+            width: 111px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &-old {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 18px;
+                text-decoration: line-through;
+                color: $old-color;
+            }
+
+            &-new {
+                font-family: $font-family;
+                font-weight: 500;
+                font-size: 24px;
+                color: $red-color;
+                margin-top: 5px;
+            }
+        }
+
+        &-btn {
+            margin-left: 11px;
+
+            &__btn {
+                width: 130px;
+                height: 40px;
+                border: 1.50px solid $main-color;
+                border-radius: 10px;
+                background: $main-color;
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 15px;
+                text-align: center;
+                color: $white-color;
+                @include trn();
+
+                &:hover {
+                    background: $hover-color;
+                    border-color: $hover-color;
+                }
+
+                &:active {
+                    border-color: $pressed-color;
+                    background: $pressed-color;
+                }
+            }
+        }
+    }
+}

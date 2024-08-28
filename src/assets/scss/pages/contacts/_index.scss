@@ -1,0 +1,176 @@
+.contacts {
+
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-left {
+        margin-top: -160px;
+        margin-left: 20px;
+    }
+
+
+    &-left-content__title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #303030;
+        margin-bottom: 20px;
+    }
+
+    &-left-content__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000;
+        margin-bottom: 38px;
+    }
+
+    &-left-content-num {
+        margin-bottom: 32px;
+    }
+
+    &-left-content-num svg {
+        margin-right: 10px;
+    }
+
+
+    &-left-content-num {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+
+    }
+
+    &-green {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        color: green;
+    }
+
+    &-red {
+        color: #FF3D3D;
+    }
+
+    &-left-content__freephone {
+        margin-left: 26px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #A7AED2;
+        margin-bottom: 44px;
+    }
+
+    &-right-file {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        margin-bottom: 30px;
+    }
+
+    &-recaptcha {
+        width: 380px;
+        height: 102px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+        border: 1px solid #888888;
+        background-color: #F6F6F6;
+    }
+
+    &-input {
+        width: 30px;
+        height: 30px;
+    }
+
+    &-input-text {
+        font-size: 16px;
+        color: #353535;
+    }
+
+    &-right-file__title {
+        cursor: pointer;
+    }
+
+    &-right-check-box {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+    }
+
+    &-right-button__Send {
+        border: 1.50px solid #46C578;
+        border-radius: 10px;
+        padding: 16px 40px;
+        width: 173px;
+        height: 50px;
+        background-color: #46C578;
+        color: white;
+    }
+
+    &-right-button__Cancel {
+        border: 1.50px solid white;
+        border-radius: 10px;
+        padding: 16px 40px;
+        width: 173px;
+        height: 50px;
+        background-color: transparent;
+        color: #46C578;
+    }
+
+    &-right-buttons {
+        margin-top: 30px;
+    }
+
+    &-right__title {
+        font-weight: 700;
+        font-size: 32px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    &-right {
+        margin-top: 60px;
+        margin-right: 20px;
+
+    }
+
+    &-input__email {
+        width: 480px;
+        height: 50px;
+        border: 1px solid #888888;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+
+    &-right-form__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    &-input__message {
+        width: 480px;
+        height: 235px;
+        border: 1px solid #888888;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+
+    &-right-file__title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: #303030;
+    }
+
+
+}

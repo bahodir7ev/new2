@@ -1,0 +1,99 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+    &-top {
+        width: 100%;
+        height: 151px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #DDE0EE;
+        border-bottom: 1px solid #DDE0EE;
+    }
+
+    &__links:not(:last-child) {
+        margin-right: 45px;
+    }
+
+    &__links {
+        font-weight: 400;
+        font-size: 22px;
+        color: #303030;
+
+
+        &:hover {
+            transition: all 0.2s ease-in;
+            color: #46C578;
+        }
+    }
+
+
+    &-numbers__title {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: right;
+        color: #979EBE;
+    }
+
+    &-number {
+        margin: 5px;
+        font-weight: 600;
+        font-size: 22px;
+        text-align: right;
+        color: #303030;
+    }
+
+    &-bottom {
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-bottom__links:not(:last-child) {
+        margin-right: 72px;
+    }
+
+    &-bottom__links {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #121212;
+
+        
+        &:hover {
+            transition: all 0.2s ease-in;
+            color: #46C578;
+        }
+    }
+
+    &-bottom-socials :not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &-bottom-socials {
+        margin-right: 150px;
+    }
+
+
+    &-bottom-social__facebook svg:hover {
+        fill: #0E8EF2;
+    }
+
+    &-bottom-social__instagram svg:hover {
+        fill: #C0367F;
+    }
+
+    &-bottom-social__twitter svg:hover {
+        fill: #00A2F3;
+    }
+
+    &-bottom-image svg path {
+        transition: fill 0.2s ease;
+    }
+
+    &-bottom-image svg:hover path {
+        fill: red;
+    }
+}

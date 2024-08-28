@@ -1,0 +1,281 @@
+.header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-top {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $divider-color;
+        padding: 24px;
+    }
+
+    &-logo {
+        width: 100px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-call {
+        width: 132px;
+        height: 43px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__hot {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 14px;
+            color: $captions-color;
+            margin-bottom: 4px;
+            cursor: pointer;
+            @include trn();
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        &__num {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 18px;
+            color: $title-color;
+            cursor: pointer;
+            @include trn();
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+
+    &-search {
+        border-radius: 30px;
+        padding: 14px 125px;
+        width: 380px;
+        height: 45px;
+        background: $search-color;
+        margin-left: 120px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 0;
+
+        &-icon {
+            position: absolute;
+            z-index: 10;
+            width: 16px;
+            height: 16px;
+            left: 25%;
+            fill: $captions-color;
+        }
+
+        &-input {
+            width: 380px;
+            height: 45px;
+            padding: 14px 125px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            background-color: $search-color;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: $font-family;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 100%;
+        }
+    }
+
+    &-location {
+        width: 92px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 170px;
+        row-gap: 5px;
+
+        &-green {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 5px;
+            color: $main-color;
+            cursor: pointer;
+
+            span {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                text-align: right;
+                color: $main-color;
+            }
+        }
+
+        &-name {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 100%;
+            text-align: right;
+            color: $captions-color;
+            cursor: pointer;
+        }
+    }
+
+    &-btn-login {
+        border: 1px solid #c0c2cb;
+        border-radius: 22px;
+        width: 86px;
+        height: 34px;
+        margin-left: 50px;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: $black-color;
+        @include trn();
+
+        &:hover {
+            color: $main-color;
+            border-color: $main-color;
+        }
+    }
+
+    &-bottom {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    &-selectors {
+        width: 945px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    &-selector {
+        width: auto;
+        height: auto;
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        @include trn();
+
+        option {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 14px;
+            color: $title-color;
+        }
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &-card-btn {
+        border-radius: 10px;
+        width: 160px;
+        height: 48px;
+        background: $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        @include trn(0.3);
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+
+            path {
+                fill: $white-color;
+            }
+        }
+
+        &-texts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 2px;
+        }
+
+        &-title {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 16px;
+            color: $white-color;
+        }
+
+        &-subtitle {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        &-counter {
+            border-radius: 10px;
+            width: 34px;
+            height: 34px;
+            background: #74d69a;
+            margin-left: 10px;
+
+            &-text {
+                font-family: $font-family;
+                font-weight: 500;
+                font-size: 16px;
+                color: $white-color;
+            }
+        }
+    }
+}
